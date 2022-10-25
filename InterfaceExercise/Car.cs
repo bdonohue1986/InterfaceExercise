@@ -17,30 +17,18 @@ namespace InterfaceExercise
 
         public void DriveBackward()
         {
-            Console.WriteLine("Car backs up");
+            Console.WriteLine("Car backs up.");
         }
 
         public void DriveForward()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Car drives.");
         }
 
-        public void NosBoost() 
+        public void NosBoost()
         {
-            Console.WriteLine("Would you like to use NOS");
-            var answer =  Console.ReadLine().ToLower();
-            if (answer == "yes")
-            {
-                Console.WriteLine("Boost activated");
-            }
-            if (answer == "no")
-            {
-                Console.WriteLine("Came in 4th place");
-            }
-            else
-            {
-                answer = Console.ReadLine().ToLower();
-            }
+            Console.WriteLine($"the {Name}'s Boost activated");
         }
+          
     }
 }

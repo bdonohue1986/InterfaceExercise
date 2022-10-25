@@ -17,21 +17,9 @@ namespace InterfaceExercise
 
         public void DriveBackward()
         {
-            Console.WriteLine("Did you check your mirrors?");
-            var answer = Console.ReadLine().ToLower();
-            if (answer == "yes")
-            {
-                Console.WriteLine("Truck Drives forward");
-            }
-            if (answer == "no")
-            {
-                Console.WriteLine("Please check your mirrors.");
-            }
-            else
-            {
-                Console.WriteLine("Please respond yes or no");
-                answer = Console.ReadLine().ToLower();
-            }
+            Console.WriteLine($"{Name} Backs up ");
+            
+            
         }
 
         public void DriveForward()

@@ -19,26 +19,14 @@ namespace InterfaceExercise
 
         public void DriveBackward()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Loud beeping and bright white lights activate");
         }
 
         public void DriveForward()
         {
-            Console.WriteLine("Is your seatbelt buckled?");
-            var answer = Console.ReadLine().ToLower();
-            if (answer == "yes")
-            {
-                Console.WriteLine("Truck Drives forward");
-            }
-            if (answer == "no")
-            {
-                Console.WriteLine("Please buckle your seatbelt.");
-            }
-            else
-            {
-                Console.WriteLine("Please respond yes or no");
-                answer = Console.ReadLine().ToLower();
-            }
+            Console.WriteLine($"{Name} drives off");
+            
+         
         }
     }
 }
